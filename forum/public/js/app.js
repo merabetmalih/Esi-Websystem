@@ -51995,34 +51995,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var list2 = ['haroune', 'kechaoui', '9/9/1999', '5eme'];
-var list22 = ['haroune', 'kechaoui', '9/9/1999', '5eme'];
-var list = [list2, list2, list2, list2, list2, list2, list22, list22, list22, list22, list22];
+var list2 = ['haroune', 'kechaoui', '221452', '5eme'];
+var list22 = ['haroune', 'kechaoui', '45872', '5eme'];
+var list = [list2, list22];
 var ListEditor =
 /*#__PURE__*/
 function (_React$Component) {
   _inherits(ListEditor, _React$Component);
 
   function ListEditor(props) {
+    var _this;
+
     _classCallCheck(this, ListEditor);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ListEditor).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ListEditor).call(this, props));
+    _this.state = {
+      studentList: list
+    };
+    return _this;
   }
 
   _createClass(ListEditor, [{
     key: "AddMethod",
     value: function AddMethod() {
-      alert('shiiit it added');
+      var name = document.getElementById("name").value;
+      var lastName = document.getElementById("lastn").value;
+      var SID = document.getElementById("uid").value;
+      var degree = document.getElementById("deg").value;
+
+      if (name != '' && lastName != '' && SID != '' && degree != '') {
+        var listx = [name, lastName, SID, degree];
+        list.push(listx);
+        this.setState({
+          studentList: list
+        });
+      }
     }
   }, {
     key: "RemoveMethod",
-    value: function RemoveMethod() {
-      alert('shiiit it removed');
+    value: function RemoveMethod(itemIndex) {
+      list.splice(itemIndex, 1);
+      this.setState({
+        studentList: list
+      });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Two-container"
@@ -52030,7 +52050,7 @@ function (_React$Component) {
         className: "list-items"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title"
-      }, "Student List"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, list.map(function (item) {
+      }, "Student List"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, this.state.studentList.map(function (item) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           className: "list-item",
           key: item
@@ -52039,12 +52059,14 @@ function (_React$Component) {
         }, item.map(function (miniitem) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
             className: "list-mini-item",
-            key: miniitem
+            key: miniitem[2]
           }, miniitem);
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "button-spice1",
           type: "button",
-          onClick: _this.RemoveMethod.bind(_this)
+          onClick: function onClick() {
+            return _this2.RemoveMethod(_this2.state.studentList.indexOf(item));
+          }
         }, "\u2212")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null));
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "list-items"
@@ -52054,6 +52076,7 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "name",
         type: "text",
         name: "subject",
         placeholder: "Name"
@@ -52061,6 +52084,7 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "lastn",
         type: "text",
         name: "subject",
         placeholder: "Last name"
@@ -52068,6 +52092,7 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "uid",
         type: "text",
         name: "subject",
         placeholder: "UID"
@@ -52075,13 +52100,16 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "deg",
         type: "text",
         name: "subject",
         placeholder: "Degree"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "button-spice2",
         type: "button",
-        onClick: this.AddMethod.bind(this)
+        onClick: function onClick() {
+          return _this2.AddMethod();
+        }
       }, "+")));
     }
   }]);
