@@ -1,0 +1,29 @@
+@keyframes gradient{
+    from{background-color: #0c8ef8;}
+    to{background-color: #ff25b6;}
+  }
+  
+  
+  
+  html,body{
+    animation-name: gradient;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  
+
+  
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  .App2{
+    padding: 3%;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
