@@ -1,6 +1,8 @@
 import React from "react" ;
 import ReactDOM from 'react-dom' ;
-import LogImg from "../../logo.svg" ;
+import LoginUser from "../../components/res/gg.png" ;
+import editor from "../../components/res/listeditor.svg" ;
+import mailcomposer from "../../components/res/composer.svg" ;
 import {Mail} from "../mailcomposer/MailComposer";
 import {Login} from "../login/login";
 import {ListEditor} from '../index' ;
@@ -56,7 +58,7 @@ export class Panel extends React.Component {
                         <div className="section-one">
                             <div className="title">List Editor</div>
                             <div className="image">
-                                <img src={LogImg} alt="logo" />
+                                <img src={mailcomposer} alt="logo" />
                             </div>
                             <div className="description">This option will help you add or remove the students list as you wish.</div>
                             <button className="button" onClick={this.ListEditor.bind(this)}>Edit the students list</button>
@@ -64,14 +66,14 @@ export class Panel extends React.Component {
                         <div className="section-one">
                             <div className="title">Email composer</div>
                             <div className="image">
-                            <img src={LogImg} alt="logo" />
+                            <img src={editor} alt="logo" />
                             </div>
                             <div className="description">This the mail composer for you to send administartif stuff</div>
                             <button className="button" onClick={this.GoMSG.bind(this)}>Compose Email</button>
                         </div>
                         <div className="user-log">
                             <div className="user-image">
-                                <img src={LogImg} alt="logo" />
+                                <img id="user" src={ LoginUser} alt="logo" />
                             </div>
                             <div className="username">Usernamedummy</div>
                             <div className="email"> Mail@dummy.dummy</div>

@@ -1,5 +1,4 @@
 import React from "react" ;
-import LogImg from "../../logo.svg" ;
 
 const list2 = ['haroune' , 'kechaoui' , '221452' , '5eme'];
 const list22 = ['haroune' , 'kechaoui' , '45872' , '5eme'];

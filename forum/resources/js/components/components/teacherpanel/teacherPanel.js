@@ -1,9 +1,9 @@
 import React from "react" ;
 import ReactDOM from 'react-dom' ;
-import LogImg from "../../logo.svg" ;
+import LogImg from "../../components/res/teacher.svg" ;
 
 
-const list =["tthis is the fist ezzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzz zzzzzzzzzmail " , "you better be sooo fkiffffffsssssssssssssssssssssssss sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdddddddddddddddddddddddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffng good, so you better be good"];
+const list =["tthis is the fist  zzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzz " , "you besddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffng good, so you better be good"];
 const list3 =["tthis is the fist mail2 " , "hey this one works well"];
 const list4 =["tthis is the fist mail3 " , "you better be sooo fking good, so you better be goodxx"];
 const list5=["tthis is the fist mail4 " , "you better be sooo fking good, so you better be good"];

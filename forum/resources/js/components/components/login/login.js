@@ -1,5 +1,5 @@
 import React from "react" ;
-import LogImg from "../../logo.svg"
+import userImage from "../../components/res/logo.svg" ;
 
 
 
@@ -13,7 +13,7 @@ export class Login extends React.Component {
         <div className="main-container">
             <div className="header">Login portal</div>
             <div className="image">
-                <img src={LogImg} alt="login image"/>
+                <img src={userImage} alt="login image"/>
             </div>
             <div className="radio-container">
                     <div className="option">

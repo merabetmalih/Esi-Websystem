@@ -1,5 +1,5 @@
 import React from "react" ;
-import LogImg2 from "../../logo.svg" ;
+import LogImg2 from "../../components/res/mail.svg" ;
 
 
 export class Mail extends React.Component {
