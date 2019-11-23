@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom' ;
 import LoginUser from "../../components/res/gg.png" ;
 import editor from "../../components/res/listeditor.svg" ;
 import mailcomposer from "../../components/res/composer.svg" ;
-import {Mail} from "../mailcomposer/MailComposer";
-import {Login} from "../login/login";
+import {Mail} from "../mailcomposer/mailcomposer";
 import {ListEditor} from '../index' ;
 import { TeacherPanel } from '../index' ;
 
@@ -29,14 +28,7 @@ export class Panel extends React.Component {
 
     LogUserOut(){
         //logs out the user
-        const loger = (
-            <div className="App">
-                <div>
-                    <Login clickmethode={this.props.clickMeth}/>
-                </div>
-        </div>
-        )
-        ReactDOM.render(loger , document.getElementById('app'));
+        location.reload(true);
     }
 
     ListEditor(){
@@ -52,7 +44,7 @@ export class Panel extends React.Component {
     }
 
     render(){
-            if(this.props.rater === "one"){
+            if(this.props.rater == "one"){
                 return(
                     <div className="base-container">
                         <div className="section-one">
@@ -81,7 +73,7 @@ export class Panel extends React.Component {
                         </div>
                     </div>
                     )
-            }else if(this.props.rater === "two") {
+            }else {
                 return(
                     <div className="App">
                         <TeacherPanel />

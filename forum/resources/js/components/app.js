@@ -15,16 +15,31 @@ export default class Appli extends Component {
   }
 
  
-  handelclick(){
+  handelclick(mail , password){
     //handle the registration here
-    if(document.getElementById('radio-one').checked){
-      this.setState({ rate: document.getElementById('radio-one').value});
-    }else if (document.getElementById('radio-two').checked){
-      this.setState({ rate: document.getElementById('radio-two').value});
+    if(mail != null && password != null  && mail != '' && password != ''){
+      if(document.getElementById('radio-one').checked || document.getElementById('radio-two').checked){
+        if(document.getElementById('radio-one').checked){
+          this.setState({ rate: document.getElementById('radio-one').value});
+          
+        }else if (document.getElementById('radio-one').checked){
+          this.setState({ rate: document.getElementById('radio-two').value});
+        }
+
+        this.setState({
+          value : !this.state.value
+        });
+        //here add the user mail and password
+        alert(mail + password)
+      }else{
+        alert('choose if you are a techer or an admin')
+
+      }
+    }else{
+      alert('put your mail and password');
     }
-    this.setState({
-      value : !this.state.value
-    });
+    
+    
     
   }
   
@@ -41,7 +56,7 @@ export default class Appli extends Component {
       return (
         <div className="App2">
           <div>
-            <Panel rater={this.state.rate} clickMeth={this.handelclick.bind(this)}/>
+            <Panel rater={this.state.rate} />
           </div>
         </div>
       );

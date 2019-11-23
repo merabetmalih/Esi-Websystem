@@ -1,4 +1,6 @@
 import React from "react" ;
+import ReactDOM from 'react-dom';
+import {Panel} from '../index';
 
 const list2 = ['haroune' , 'kechaoui' , '221452' , '5eme'];
 const list22 = ['haroune' , 'kechaoui' , '45872' , '5eme'];
@@ -31,12 +33,24 @@ export class ListEditor extends React.Component {
 		})
 	}
 
+	back(){
+		const pan = (
+		<div className="App2">
+			<div>
+		  		<Panel rater="one" />
+			</div>
+		  </div>);
+
+		ReactDOM.render(pan , document.getElementById('app'));
+	}
+
 
 
     render(){
 
         return(
 				<div className="Two-container">
+					<button className="back-button" onClick={this.back.bind(this)}>&#8592;</button>
 					<div className="list-items">
 					<div className="title">
 							Student List

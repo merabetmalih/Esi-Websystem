@@ -410,8 +410,7 @@ label {
 }
 
 .list-items{
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,12 +429,14 @@ label {
 }
 
 .list-items::-webkit-scrollbar-track {
-    background-color : rgba(0, 0, 0, 0.055);
+    background-color : rgba(0, 0, 0, 0.007);
 }
  
 .list-items::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: rgba(176, 6, 255, 0.384);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  outline: none;
 }
 
 .button-spice1{
@@ -540,12 +541,12 @@ label {
 }
 
 .list-buttons::-webkit-scrollbar-track {
-    background-color : rgba(0, 0, 0, 0.055);
+    background-color : rgba(0, 0, 0, 0.007);
 }
  
 .list-buttons::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: rgba(176, 6, 255, 0.384);
+  outline: none;
 }
 
 .list-button{
@@ -615,4 +616,31 @@ label {
 .Mailtext::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+
+
+.back-button{
+    height: 60px;
+    width: 40px;
+    color: blueviolet;
+    background-color: white;
+    border: blueviolet 4px solid;
+    border-radius: 100px;
+    padding: 0px 0px 0px 0px;
+    margin: 1.5em;
+    transition: all 250ms ease-in-out;
+}
+
+.back-button:hover{
+    color: white;
+    background-color: blueviolet;
+    box-shadow:  0px 0px 35px 0.2px rgba(176, 6, 255, 0.384);
+    
+}
+
+.back-button:focus{
+    outline: none;
+    color: white;
+    background-color: blueviolet;
+    box-shadow:  0px 0px 35px 0.2px rgba(176, 6, 255, 0.384);
 }

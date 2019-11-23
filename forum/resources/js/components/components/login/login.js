@@ -17,24 +17,26 @@ export class Login extends React.Component {
             </div>
             <div className="radio-container">
                     <div className="option">
-                        <input required type="radio" name="demo1" value="one" id="radio-one" className="form-radio" />
+                        <input type="radio" name="demo1" value="one" id="radio-one" className="form-radio" />
                         <label  className="labelx" >Admin</label>
                     </div>
                     <div className="option">
-                        <input required type="radio" name="demo2" value="two" id="radio-two" className="form-radio" />
+                        <input type="radio" name="demo1" value="two" id="radio-two" className="form-radio" />
                         <label className="labelx" >Teacher</label>
                     </div>  
             </div>
             <div className="form">
                 <div className="form-group">
                     <label htmlFor="email">Mail</label>
-                    <input className="input-form" type="email" name="email" placeholder="email" />
+                    <input className="input-form" type="email" id="mail" name="email" placeholder="email" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input className="input-form" type="password" name="password" placeholder="password" />
+                    <input className="input-form" type="password" id="pass" name="password" placeholder="password" />
                 </div>
-                <button className="button-log" type="button" onClick={this.props.clickmethode}>Login</button>
+                <button className="button-log" type="button" 
+                onClick={() => this.props.clickmethode(document.getElementById("mail").value 
+                , document.getElementById("pass").value)}>Login</button>
             </div>
             
                 

@@ -1861,7 +1861,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes shadowanime{\r\n    from{box-shadow: 0px 0px 14px 0.3px blueviolet;}\r\n    to{box-shadow: 0px 0px 100px 0.3px transparent;}\r\n    \r\n}\r\n\r\n@keyframes shadowanime{\r\n    from{box-shadow: 0px 0px 14px 0.3px blueviolet;}\r\n    to{box-shadow: 0px 0px 100px 0.3px transparent;}\r\n    \r\n}\r\n\r\n.App{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    margin: 20px;\r\n}\r\n.main-container{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color:white;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n    width: 60vh;\r\n}\r\n\r\n.layout-container{\r\n    padding: 1em;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color:white;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.noback-container{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    width: 70vh;\r\n}\r\n\r\n.message-art{\r\n    width: 20em;\r\n}\r\n\r\n.header{\r\n    margin-top: 15px;\r\n    font-size: 24px;\r\n}\r\n\r\n.image {\r\n    width: 14em;\r\n    \r\n  }\r\n\r\n  img {\r\n    width: 100%;\r\n    height: 100%;\r\n    \r\n  }\r\n\r\n  #user{\r\n    border-radius: 100%;\r\n  }\r\n\r\n.form {\r\n    margin-top: 2em;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n}\r\n.form-group {\r\n      display: -webkit-box;\r\n      display: flex;\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n              flex-direction: column;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      width: -webkit-fit-content;\r\n      width: -moz-fit-content;\r\n      width: fit-content;\r\n      \r\n}\r\n\r\nlabel {\r\n      font-size: 18px;\r\n}\r\n.input-form {\r\n    margin-top: 6px;\r\n    min-width: 18em;\r\n    height: 43px;\r\n    padding: 0px 10px;\r\n    font-size: 16px;\r\n    font-family:  sans-serif;\r\n    background-color: #f3f3f3;\r\n    border: 0;\r\n    border-radius: 25px;\r\n    margin-bottom: 31px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.input-form:hover {\r\n    -webkit-animation-name: shadowanime;\r\n            animation-name: shadowanime;\r\n    -webkit-animation-duration: 600ms;\r\n            animation-duration: 600ms;\r\n    -webkit-animation-iteration-count: 1;\r\n            animation-iteration-count: 1;\r\n    -webkit-animation-direction: normal;\r\n            animation-direction: normal;\r\n}\r\n\r\n.input-form:focus {\r\n    outline: none;\r\n    box-shadow: 0px 0px 14px 0.3px blueviolet;\r\n}\r\n\r\n.input-text{\r\n    margin-top: 6px;\r\n    min-width: 18em;\r\n    min-height: 13em;\r\n    padding: 10px;\r\n    font-size: 16px;\r\n    font-family:  sans-serif;\r\n    background-color: #f3f3f3;\r\n    border: 0;\r\n    border-radius: 25px;\r\n    margin-bottom: 31px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n\r\n}\r\n\r\n.input-text:hover {\r\n    background-color: #ffffff;\r\n    box-shadow: 0px 0px 14px 0.3px blueviolet;\r\n}\r\n\r\n.input-text:focus {\r\n    outline: none;\r\n    box-shadow: 0px 0px 12px 0.8px blueviolet;\r\n}\r\n\r\n/*********/\r\n.form-radio\r\n{\r\n     -webkit-appearance: none;\r\n     -moz-appearance: none;\r\n     appearance: none;\r\n     display: inline-block;\r\n     position: relative;\r\n     background-color: #f1f1f1;\r\n     color: #666;\r\n     top: 10px;\r\n     height: 30px;\r\n     width: 30px;\r\n     border: 0;\r\n     border-radius: 50px;\r\n     cursor: pointer;     \r\n     outline: none;\r\n}\r\n.form-radio:checked::before\r\n{\r\n     position: absolute;\r\n     font: 13px/1 'Open Sans', sans-serif;\r\n     left: 11px;\r\n     top: 7px;\r\n     content: '\\2143';\r\n     -webkit-transform: rotate(40deg);\r\n             transform: rotate(40deg);\r\n}\r\n.form-radio:hover\r\n{\r\n     background-color: #f7f7f7;\r\n}\r\n.form-radio:checked\r\n{\r\n     background-color: #f1f1f1;\r\n}\r\n.labelx\r\n{\r\n     font: 15px/1.7 'Open Sans', sans-serif;\r\n     color: #333;\r\n     -webkit-font-smoothing: antialiased;\r\n     -moz-osx-font-smoothing: grayscale;\r\n     cursor: pointer;\r\n} \r\n\r\n.button-log{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: blueviolet;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 15px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.radio-container{\r\n    margin-bottom: 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n}\r\n\r\n.button-log:hover{\r\n    background-color: blueviolet;\r\n    color: white;\r\n\r\n}\r\n\r\n.button-log:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.base-container{\r\n    width: 95%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    align-content: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n\r\n}\r\n\r\n.section-one{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width: 50vh;\r\n    height: 70vh;\r\n    margin: 5vh;\r\n}\r\n\r\n\r\n.title{\r\n    font-size: 2em;\r\n    margin-top: 5vh;\r\n}\r\n\r\n.description{\r\n    text-align: center;\r\n    font-size: 1.2em;\r\n    height: 10vh;\r\n    width: 40vh;\r\n}\r\n\r\n.button{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: blueviolet;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 70%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button:hover{\r\n    background-color: blueviolet;\r\n    color: white;\r\n}\r\n\r\n.button:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.user-log{\r\n    align-self: right;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.user-image{\r\n    width: 10em;\r\n    height: 10em;\r\n    border-radius: 100%;\r\n    border: solid 8px #333;\r\n    margin: 2vh;\r\n}\r\n\r\n.username{\r\n    margin: 2vh;\r\n    text-align: center;\r\n    font-size: large;\r\n}\r\n\r\n.email{\r\n    margin: 2vh;\r\n    text-align: center;\r\n    font-size: large;\r\n    font-weight: bold;\r\n}\r\n\r\n\r\n.button-out{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: rgb(253, 24, 24);\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button-out:hover{\r\n    background-color: rgb(253, 24, 24);\r\n    color: white;\r\n}\r\n\r\n.button-out:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.base-container-t{\r\n    padding: 10px;\r\n    width: 95%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.user-header{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    align-content: center;\r\n    margin: 2vh;\r\n}\r\n\r\n.imageusr{\r\n    border-radius: 100%;\r\n    border: 3px solid  #333;\r\n    height: 3em;\r\n    width: 3em;\r\n    padding: 0px 0px 0px 0px;\r\n    margin: 0px 0px 0px 0px;\r\n    \r\n}\r\n\r\n.message-art{\r\n    margin-left: 2em;\r\n}\r\n\r\n.button-out-t{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: rgb(253, 24, 24);\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 20%;\r\n    margin-right: 10px;\r\n    margin-left: auto;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.button-out-t:hover{\r\n    background-color: rgb(253, 24, 24);\r\n    color: white;\r\n}\r\n\r\n.button-out-t:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.section-two{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width: 50%;\r\n    height: 60vh;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.Two-container{\r\n    width: 90%;\r\n    padding: 10px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n\r\n}\r\n\r\n.list-items{\r\n    border-bottom-left-radius: 25px;\r\n    border-top-left-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    height: 70vh;\r\n    width: 90vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.list-items::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.list-items::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.055);\r\n}\r\n \r\n.list-items::-webkit-scrollbar-thumb {\r\n  background-color: darkgrey;\r\n  outline: 1px solid slategrey;\r\n}\r\n\r\n.button-spice1{\r\n    height: 40px;\r\n    width: 40px;\r\n    color: red;\r\n    background-color: white;\r\n    border: red 4px solid;\r\n    border-radius: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.button-spice1:hover{\r\n    color: white;\r\n    background-color: red;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(255, 6, 6, 0.384);\r\n    \r\n}\r\n\r\n.button-spice1:focus{\r\n    outline: none;\r\n    color: white;\r\n    background-color: red;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(255, 6, 6, 0.384);\r\n}\r\n\r\n.button-spice2{\r\n    color: rgb(25, 202, 9);\r\n    border: rgb(25, 202, 9) 4px solid;\r\n    background-color: transparent;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 15px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button-spice2:hover{\r\n    color: white;\r\n    background-color:rgb(25, 202, 9);\r\n    box-shadow:  0px 0px 35px 0.2px rgba(25, 202, 9, 0.384);\r\n    \r\n}\r\n\r\n.button-spice2:focus{\r\n    outline: none;\r\n    color: white;\r\n    background-color: rgb(25, 202, 9);\r\n    box-shadow:  0px 0px 35px 0.2px rgba(25, 202, 9, 0.384);\r\n}\r\n\r\n.list-item{\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    list-style: none;\r\n    display:inline;\r\n    padding: 10px 10px;\r\n    \r\n}\r\n\r\n.list-mini-item{\r\n    list-style: none;\r\n    display:inline;\r\n    padding: 10px 10px;\r\n}\r\n\r\n\r\n.Two-container-t{\r\n    width: 90%;\r\n    padding: 10px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n\r\n}\r\n\r\n.list-buttons{\r\n    border-bottom-left-radius: 25px;\r\n    border-top-left-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: start;\r\n            align-items: flex-start;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    height: 50vh;\r\n    width: 90vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.list-buttons::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.list-buttons::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.055);\r\n}\r\n \r\n.list-buttons::-webkit-scrollbar-thumb {\r\n  background-color: darkgrey;\r\n  outline: 1px solid slategrey;\r\n}\r\n\r\n.list-button{\r\n    width: 60vh;\r\n    height: 45px;\r\n    background-color: rgba(173, 173, 173, 0.26);\r\n    text-align: start;\r\n    padding-left: 10px;\r\n    border-radius: 100px;\r\n    border: none;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.list-button:hover{\r\n    background-color : rgba(25, 202, 9, 0.479);\r\n    color: white;\r\n\r\n}\r\n\r\n.list-button:focus{\r\n    outline: none;\r\n    background-color : rgba(137, 43, 226, 0.397);\r\n    color: white;\r\n\r\n}\r\n\r\n.title{\r\n    margin-left: 30px;\r\n}\r\n\r\n.mail-preview{\r\n    border-radius: 25px;\r\n    padding: 2.5em;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: start;\r\n            align-items: flex-start;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width : 70vh;\r\n    height: 40vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n\r\n.subject{\r\n    font-weight: bold;\r\n    width: 60vh;\r\n}\r\n\r\n.Mailtext{\r\n    width: 60vh;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n}\r\n\r\n.Mailtext::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.Mailtext::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.055);\r\n}\r\n \r\n.Mailtext::-webkit-scrollbar-thumb {\r\n  background-color: darkgrey;\r\n  outline: 1px solid slategrey;\r\n}\r\n", ""]);
+exports.push([module.i, "@-webkit-keyframes shadowanime{\r\n    from{box-shadow: 0px 0px 14px 0.3px blueviolet;}\r\n    to{box-shadow: 0px 0px 100px 0.3px transparent;}\r\n    \r\n}\r\n\r\n@keyframes shadowanime{\r\n    from{box-shadow: 0px 0px 14px 0.3px blueviolet;}\r\n    to{box-shadow: 0px 0px 100px 0.3px transparent;}\r\n    \r\n}\r\n\r\n.App{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    margin: 20px;\r\n}\r\n.main-container{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color:white;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n    width: 60vh;\r\n}\r\n\r\n.layout-container{\r\n    padding: 1em;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color:white;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.noback-container{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    width: 70vh;\r\n}\r\n\r\n.message-art{\r\n    width: 20em;\r\n}\r\n\r\n.header{\r\n    margin-top: 15px;\r\n    font-size: 24px;\r\n}\r\n\r\n.image {\r\n    width: 14em;\r\n    \r\n  }\r\n\r\n  img {\r\n    width: 100%;\r\n    height: 100%;\r\n    \r\n  }\r\n\r\n  #user{\r\n    border-radius: 100%;\r\n  }\r\n\r\n.form {\r\n    margin-top: 2em;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n}\r\n.form-group {\r\n      display: -webkit-box;\r\n      display: flex;\r\n      -webkit-box-orient: vertical;\r\n      -webkit-box-direction: normal;\r\n              flex-direction: column;\r\n      -webkit-box-align: center;\r\n              align-items: center;\r\n      width: -webkit-fit-content;\r\n      width: -moz-fit-content;\r\n      width: fit-content;\r\n      \r\n}\r\n\r\nlabel {\r\n      font-size: 18px;\r\n}\r\n.input-form {\r\n    margin-top: 6px;\r\n    min-width: 18em;\r\n    height: 43px;\r\n    padding: 0px 10px;\r\n    font-size: 16px;\r\n    font-family:  sans-serif;\r\n    background-color: #f3f3f3;\r\n    border: 0;\r\n    border-radius: 25px;\r\n    margin-bottom: 31px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.input-form:hover {\r\n    -webkit-animation-name: shadowanime;\r\n            animation-name: shadowanime;\r\n    -webkit-animation-duration: 600ms;\r\n            animation-duration: 600ms;\r\n    -webkit-animation-iteration-count: 1;\r\n            animation-iteration-count: 1;\r\n    -webkit-animation-direction: normal;\r\n            animation-direction: normal;\r\n}\r\n\r\n.input-form:focus {\r\n    outline: none;\r\n    box-shadow: 0px 0px 14px 0.3px blueviolet;\r\n}\r\n\r\n.input-text{\r\n    margin-top: 6px;\r\n    min-width: 18em;\r\n    min-height: 13em;\r\n    padding: 10px;\r\n    font-size: 16px;\r\n    font-family:  sans-serif;\r\n    background-color: #f3f3f3;\r\n    border: 0;\r\n    border-radius: 25px;\r\n    margin-bottom: 31px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n\r\n}\r\n\r\n.input-text:hover {\r\n    background-color: #ffffff;\r\n    box-shadow: 0px 0px 14px 0.3px blueviolet;\r\n}\r\n\r\n.input-text:focus {\r\n    outline: none;\r\n    box-shadow: 0px 0px 12px 0.8px blueviolet;\r\n}\r\n\r\n/*********/\r\n.form-radio\r\n{\r\n     -webkit-appearance: none;\r\n     -moz-appearance: none;\r\n     appearance: none;\r\n     display: inline-block;\r\n     position: relative;\r\n     background-color: #f1f1f1;\r\n     color: #666;\r\n     top: 10px;\r\n     height: 30px;\r\n     width: 30px;\r\n     border: 0;\r\n     border-radius: 50px;\r\n     cursor: pointer;     \r\n     outline: none;\r\n}\r\n.form-radio:checked::before\r\n{\r\n     position: absolute;\r\n     font: 13px/1 'Open Sans', sans-serif;\r\n     left: 11px;\r\n     top: 7px;\r\n     content: '\\2143';\r\n     -webkit-transform: rotate(40deg);\r\n             transform: rotate(40deg);\r\n}\r\n.form-radio:hover\r\n{\r\n     background-color: #f7f7f7;\r\n}\r\n.form-radio:checked\r\n{\r\n     background-color: #f1f1f1;\r\n}\r\n.labelx\r\n{\r\n     font: 15px/1.7 'Open Sans', sans-serif;\r\n     color: #333;\r\n     -webkit-font-smoothing: antialiased;\r\n     -moz-osx-font-smoothing: grayscale;\r\n     cursor: pointer;\r\n} \r\n\r\n.button-log{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: blueviolet;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 15px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.radio-container{\r\n    margin-bottom: 10px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n}\r\n\r\n.button-log:hover{\r\n    background-color: blueviolet;\r\n    color: white;\r\n\r\n}\r\n\r\n.button-log:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.base-container{\r\n    width: 95%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    align-content: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n\r\n}\r\n\r\n.section-one{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width: 50vh;\r\n    height: 70vh;\r\n    margin: 5vh;\r\n}\r\n\r\n\r\n.title{\r\n    font-size: 2em;\r\n    margin-top: 5vh;\r\n}\r\n\r\n.description{\r\n    text-align: center;\r\n    font-size: 1.2em;\r\n    height: 10vh;\r\n    width: 40vh;\r\n}\r\n\r\n.button{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: blueviolet;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 70%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 5px;\r\n    margin-top: 20px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button:hover{\r\n    background-color: blueviolet;\r\n    color: white;\r\n}\r\n\r\n.button:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.user-log{\r\n    align-self: right;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.user-image{\r\n    width: 10em;\r\n    height: 10em;\r\n    border-radius: 100%;\r\n    border: solid 8px #333;\r\n    margin: 2vh;\r\n}\r\n\r\n.username{\r\n    margin: 2vh;\r\n    text-align: center;\r\n    font-size: large;\r\n}\r\n\r\n.email{\r\n    margin: 2vh;\r\n    text-align: center;\r\n    font-size: large;\r\n    font-weight: bold;\r\n}\r\n\r\n\r\n.button-out{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: rgb(253, 24, 24);\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button-out:hover{\r\n    background-color: rgb(253, 24, 24);\r\n    color: white;\r\n}\r\n\r\n.button-out:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.base-container-t{\r\n    padding: 10px;\r\n    width: 95%;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.user-header{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    align-content: center;\r\n    margin: 2vh;\r\n}\r\n\r\n.imageusr{\r\n    border-radius: 100%;\r\n    border: 3px solid  #333;\r\n    height: 3em;\r\n    width: 3em;\r\n    padding: 0px 0px 0px 0px;\r\n    margin: 0px 0px 0px 0px;\r\n    \r\n}\r\n\r\n.message-art{\r\n    margin-left: 2em;\r\n}\r\n\r\n.button-out-t{\r\n    background-color: transparent;\r\n    border: solid 2px #fff ;\r\n    color: rgb(253, 24, 24);\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 20%;\r\n    margin-right: 10px;\r\n    margin-left: auto;\r\n    margin-bottom: 10px;\r\n    margin-top: 10px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.button-out-t:hover{\r\n    background-color: rgb(253, 24, 24);\r\n    color: white;\r\n}\r\n\r\n.button-out-t:focus{\r\n    outline: none;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.291);\r\n}\r\n\r\n.section-two{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width: 50%;\r\n    height: 60vh;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n\r\n.Two-container{\r\n    width: 90%;\r\n    padding: 10px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(51, 51, 51, 0.5);\r\n\r\n}\r\n\r\n.list-items{\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    height: 70vh;\r\n    width: 90vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.list-items::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.list-items::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.007);\r\n}\r\n \r\n.list-items::-webkit-scrollbar-thumb {\r\n  background-color: rgba(176, 6, 255, 0.384);\r\n  border-top-right-radius: 25px;\r\n  border-bottom-right-radius: 25px;\r\n  outline: none;\r\n}\r\n\r\n.button-spice1{\r\n    height: 40px;\r\n    width: 40px;\r\n    color: red;\r\n    background-color: white;\r\n    border: red 4px solid;\r\n    border-radius: 100%;\r\n    padding: 0px 0px 0px 0px;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.button-spice1:hover{\r\n    color: white;\r\n    background-color: red;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(255, 6, 6, 0.384);\r\n    \r\n}\r\n\r\n.button-spice1:focus{\r\n    outline: none;\r\n    color: white;\r\n    background-color: red;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(255, 6, 6, 0.384);\r\n}\r\n\r\n.button-spice2{\r\n    color: rgb(25, 202, 9);\r\n    border: rgb(25, 202, 9) 4px solid;\r\n    background-color: transparent;\r\n    border-radius: 25px;\r\n    padding: 10px;\r\n    width: 60%;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    margin-bottom: 15px;\r\n    box-shadow: 0px 0px 15px 0.2px rgba(68, 68, 68, 0.281);\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.button-spice2:hover{\r\n    color: white;\r\n    background-color:rgb(25, 202, 9);\r\n    box-shadow:  0px 0px 35px 0.2px rgba(25, 202, 9, 0.384);\r\n    \r\n}\r\n\r\n.button-spice2:focus{\r\n    outline: none;\r\n    color: white;\r\n    background-color: rgb(25, 202, 9);\r\n    box-shadow:  0px 0px 35px 0.2px rgba(25, 202, 9, 0.384);\r\n}\r\n\r\n.list-item{\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    list-style: none;\r\n    display:inline;\r\n    padding: 10px 10px;\r\n    \r\n}\r\n\r\n.list-mini-item{\r\n    list-style: none;\r\n    display:inline;\r\n    padding: 10px 10px;\r\n}\r\n\r\n\r\n.Two-container-t{\r\n    width: 90%;\r\n    padding: 10px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n    border-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: row;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n\r\n}\r\n\r\n.list-buttons{\r\n    border-bottom-left-radius: 25px;\r\n    border-top-left-radius: 25px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: start;\r\n            align-items: flex-start;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    height: 50vh;\r\n    width: 90vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.list-buttons::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.list-buttons::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.007);\r\n}\r\n \r\n.list-buttons::-webkit-scrollbar-thumb {\r\n  background-color: rgba(176, 6, 255, 0.384);\r\n  outline: none;\r\n}\r\n\r\n.list-button{\r\n    width: 60vh;\r\n    height: 45px;\r\n    background-color: rgba(173, 173, 173, 0.26);\r\n    text-align: start;\r\n    padding-left: 10px;\r\n    border-radius: 100px;\r\n    border: none;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out\r\n}\r\n\r\n.list-button:hover{\r\n    background-color : rgba(25, 202, 9, 0.479);\r\n    color: white;\r\n\r\n}\r\n\r\n.list-button:focus{\r\n    outline: none;\r\n    background-color : rgba(137, 43, 226, 0.397);\r\n    color: white;\r\n\r\n}\r\n\r\n.title{\r\n    margin-left: 30px;\r\n}\r\n\r\n.mail-preview{\r\n    border-radius: 25px;\r\n    padding: 2.5em;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    -webkit-box-align: start;\r\n            align-items: flex-start;\r\n    background-color: #fff;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n    box-shadow:  0px 0px 20px 0.2px rgba(51, 51, 51, 0.2);\r\n    width : 70vh;\r\n    height: 40vh;\r\n    margin-right: 2em;\r\n    margin-bottom: 5px;\r\n}\r\n\r\n\r\n.subject{\r\n    font-weight: bold;\r\n    width: 60vh;\r\n}\r\n\r\n.Mailtext{\r\n    width: 60vh;\r\n    overflow-wrap: break-word;\r\n    overflow-y: auto;\r\n}\r\n\r\n.Mailtext::-webkit-scrollbar {\r\n    width: 0.7em;\r\n}\r\n\r\n.Mailtext::-webkit-scrollbar-track {\r\n    background-color : rgba(0, 0, 0, 0.055);\r\n}\r\n \r\n.Mailtext::-webkit-scrollbar-thumb {\r\n  background-color: darkgrey;\r\n  outline: 1px solid slategrey;\r\n}\r\n\r\n\r\n.back-button{\r\n    height: 60px;\r\n    width: 40px;\r\n    color: blueviolet;\r\n    background-color: white;\r\n    border: blueviolet 4px solid;\r\n    border-radius: 100px;\r\n    padding: 0px 0px 0px 0px;\r\n    margin: 1.5em;\r\n    -webkit-transition: all 250ms ease-in-out;\r\n    transition: all 250ms ease-in-out;\r\n}\r\n\r\n.back-button:hover{\r\n    color: white;\r\n    background-color: blueviolet;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(176, 6, 255, 0.384);\r\n    \r\n}\r\n\r\n.back-button:focus{\r\n    outline: none;\r\n    color: white;\r\n    background-color: blueviolet;\r\n    box-shadow:  0px 0px 35px 0.2px rgba(176, 6, 255, 0.384);\r\n}\r\n", ""]);
 
 // exports
 
@@ -51910,21 +51910,31 @@ function (_Component) {
 
   _createClass(Appli, [{
     key: "handelclick",
-    value: function handelclick() {
+    value: function handelclick(mail, password) {
       //handle the registration here
-      if (document.getElementById('radio-one').checked) {
-        this.setState({
-          rate: document.getElementById('radio-one').value
-        });
-      } else if (document.getElementById('radio-two').checked) {
-        this.setState({
-          rate: document.getElementById('radio-two').value
-        });
-      }
+      if (mail != null && password != null && mail != '' && password != '') {
+        if (document.getElementById('radio-one').checked || document.getElementById('radio-two').checked) {
+          if (document.getElementById('radio-one').checked) {
+            this.setState({
+              rate: document.getElementById('radio-one').value
+            });
+          } else if (document.getElementById('radio-one').checked) {
+            this.setState({
+              rate: document.getElementById('radio-two').value
+            });
+          }
 
-      this.setState({
-        value: !this.state.value
-      });
+          this.setState({
+            value: !this.state.value
+          }); //here add the user mail and password
+
+          alert(mail + password);
+        } else {
+          alert('choose if you are a techer or an admin');
+        }
+      } else {
+        alert('put your mail and password');
+      }
     }
   }, {
     key: "render",
@@ -51939,8 +51949,7 @@ function (_Component) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "App2"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_index__WEBPACK_IMPORTED_MODULE_3__["Panel"], {
-          rater: this.state.rate,
-          clickMeth: this.handelclick.bind(this)
+          rater: this.state.rate
         })));
       }
     }
@@ -52001,6 +52010,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListEditor", function() { return ListEditor; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../index */ "./resources/js/components/components/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -52018,6 +52030,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 var list2 = ['haroune', 'kechaoui', '221452', '5eme'];
@@ -52065,13 +52079,26 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "back",
+    value: function back() {
+      var pan = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "App2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_2__["Panel"], {
+        rater: "one"
+      })));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(pan, document.getElementById('app'));
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Two-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "back-button",
+        onClick: this.back.bind(this)
+      }, "\u2190"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "list-items"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "title"
@@ -52192,6 +52219,8 @@ function (_React$Component) {
   _createClass(Login, [{
     key: "render",
     value: function render() {
+      var _this = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52206,7 +52235,6 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "option"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        required: true,
         type: "radio",
         name: "demo1",
         value: "one",
@@ -52217,9 +52245,8 @@ function (_React$Component) {
       }, "Admin")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "option"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        required: true,
         type: "radio",
-        name: "demo2",
+        name: "demo1",
         value: "two",
         id: "radio-two",
         className: "form-radio"
@@ -52234,6 +52261,7 @@ function (_React$Component) {
       }, "Mail"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
         type: "email",
+        id: "mail",
         name: "email",
         placeholder: "email"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52243,107 +52271,20 @@ function (_React$Component) {
       }, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
         type: "password",
+        id: "pass",
         name: "password",
         placeholder: "password"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "button-log",
         type: "button",
-        onClick: this.props.clickmethode
+        onClick: function onClick() {
+          return _this.props.clickmethode(document.getElementById("mail").value, document.getElementById("pass").value);
+        }
       }, "Login")));
     }
   }]);
 
   return Login;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/***/ }),
-
-/***/ "./resources/js/components/components/mailcomposer/MailComposer.js":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/components/mailcomposer/MailComposer.js ***!
-  \*************************************************************************/
-/*! exports provided: Mail */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mail", function() { return Mail; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/res/mail.svg */ "./resources/js/components/components/res/mail.svg");
-/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var Mail =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(Mail, _React$Component);
-
-  function Mail(props) {
-    _classCallCheck(this, Mail);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Mail).call(this, props));
-  }
-
-  _createClass(Mail, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "layout-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "message-art",
-        src: _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
-        alt: "message image"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "noback-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "title"
-      }, "Send a mail"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-form",
-        type: "email",
-        name: "email",
-        placeholder: "receiver"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-form",
-        type: "text",
-        name: "subject",
-        placeholder: "subject"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "form-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-        className: "input-text",
-        name: "message",
-        placeholder: "message"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "button-log",
-        type: "button"
-      }, "Send")));
-    }
-  }]);
-
-  return Mail;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /***/ }),
@@ -52360,8 +52301,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mail", function() { return Mail; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/res/mail.svg */ "./resources/js/components/components/res/mail.svg");
-/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/res/mail.svg */ "./resources/js/components/components/res/mail.svg");
+/* harmony import */ var _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_res_mail_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../index */ "./resources/js/components/components/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -52382,6 +52326,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var Mail =
 /*#__PURE__*/
 function (_React$Component) {
@@ -52394,13 +52340,42 @@ function (_React$Component) {
   }
 
   _createClass(Mail, [{
+    key: "sendmail",
+    value: function sendmail() {
+      var mail = document.getElementById("reciver").value;
+      var subject = document.getElementById("subject").value;
+      var msg = document.getElementById("message").value;
+
+      if (mail != '', subject != '', msg != '') {
+        //send the message to the database 
+        alert(mail);
+        alert(subject);
+        alert(msg);
+      } else {
+        alert('something is missing , please verify');
+      }
+    }
+  }, {
+    key: "back",
+    value: function back() {
+      var pan = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "App2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_3__["Panel"], {
+        rater: "one"
+      })));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(pan, document.getElementById('app'));
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "layout-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "back-button",
+        onClick: this.back.bind(this)
+      }, "\u2190"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "message-art",
-        src: _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_1___default.a,
+        src: _components_res_mail_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
         alt: "message image"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "noback-container"
@@ -52410,6 +52385,7 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "reciver",
         type: "email",
         name: "email",
         placeholder: "receiver"
@@ -52417,6 +52393,7 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "input-form",
+        id: "subject",
         type: "text",
         name: "subject",
         placeholder: "subject"
@@ -52424,11 +52401,13 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         className: "input-text",
+        id: "message",
         name: "message",
         placeholder: "message"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "button-log",
-        type: "button"
+        type: "button",
+        onClick: this.sendmail.bind(this)
       }, "Send")));
     }
   }]);
@@ -52458,9 +52437,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_res_listeditor_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_res_listeditor_svg__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_res_composer_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/res/composer.svg */ "./resources/js/components/components/res/composer.svg");
 /* harmony import */ var _components_res_composer_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_res_composer_svg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _mailcomposer_MailComposer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mailcomposer/MailComposer */ "./resources/js/components/components/mailcomposer/MailComposer.js");
-/* harmony import */ var _login_login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../login/login */ "./resources/js/components/components/login/login.js");
-/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../index */ "./resources/js/components/components/index.js");
+/* harmony import */ var _mailcomposer_mailcomposer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../mailcomposer/mailcomposer */ "./resources/js/components/components/mailcomposer/mailcomposer.js");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../index */ "./resources/js/components/components/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -52487,7 +52465,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
 var Panel =
 /*#__PURE__*/
 function (_React$Component) {
@@ -52505,19 +52482,14 @@ function (_React$Component) {
       //here to go to the message composer
       var Mailer = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "App"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mailcomposer_MailComposer__WEBPACK_IMPORTED_MODULE_5__["Mail"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_mailcomposer_mailcomposer__WEBPACK_IMPORTED_MODULE_5__["Mail"], null)));
       react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(Mailer, document.getElementById('app'));
     }
   }, {
     key: "LogUserOut",
     value: function LogUserOut() {
       //logs out the user
-      var loger = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "App"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_login_login__WEBPACK_IMPORTED_MODULE_6__["Login"], {
-        clickmethode: this.props.clickMeth
-      })));
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(loger, document.getElementById('app'));
+      location.reload(true);
     }
   }, {
     key: "ListEditor",
@@ -52525,13 +52497,13 @@ function (_React$Component) {
       //go to the list editor
       var Editor = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "App2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_7__["ListEditor"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_6__["ListEditor"], null)));
       react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(Editor, document.getElementById('app'));
     }
   }, {
     key: "render",
     value: function render() {
-      if (this.props.rater === "one") {
+      if (this.props.rater == "one") {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "base-container"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52578,10 +52550,10 @@ function (_React$Component) {
           className: "button-out",
           onClick: this.LogUserOut.bind(this)
         }, "Log out")));
-      } else if (this.props.rater === "two") {
+      } else {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "App"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_7__["TeacherPanel"], null));
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_6__["TeacherPanel"], null));
       }
     }
   }]);
@@ -52768,6 +52740,12 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "logout",
+    value: function logout() {
+      //logs the teacher out
+      location.reload(true);
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
@@ -52784,7 +52762,8 @@ function (_React$Component) {
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "username"
       }, "Usernamedummy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "button-out-t"
+        className: "button-out-t",
+        onClick: this.logout.bind(this)
       }, "Log out")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Two-container-t"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

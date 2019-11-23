@@ -26,6 +26,11 @@ export class TeacherPanel extends React.Component {
 
     }
 
+    logout(){
+        //logs the teacher out
+        location.reload(true);
+    }
+
 
     render(){
         return(
@@ -35,7 +40,7 @@ export class TeacherPanel extends React.Component {
                                 <img src={LogImg} alt="logo" />
                             </div>
                             <div className="username">Usernamedummy</div>
-                            <button className="button-out-t">Log out</button>
+                            <button className="button-out-t" onClick={this.logout.bind(this)}>Log out</button>
                         </div>
                         <div className="Two-container-t">
                             <div className="list-buttons">
