@@ -1,18 +1,74 @@
 import React from "react" ;
 import ReactDOM from 'react-dom';
 import {Panel} from '../index';
-
-const list2 = ['haroune' , 'kechaoui' , '221452' , '5eme'];
+import $ from 'jquery';
+import axios from 'axios';
+/*const list2 = ['haroune' , 'kechaoui' , '221452' , '5eme'];
 const list22 = ['haroune' , 'kechaoui' , '45872' , '5eme'];
-const list = [list2 , list22 ] ;
+const list =[list2,list22]*/
+function getlist(){
+	var tmp=[];
+	$.get('/api/etudiant/list')
+	.done(function(res){
+		res.data.map(item => {
+			tmp.push([item.name,item.lastname,item.UID,item.degree])
+		})
+		return tmp;
+	})
+	.fail(function(err){
+		alert('il y a un erreur de conexion')
+		console.log(err.data)
+	})
+	return tmp;
+}
+const list =getlist();
+
 export class ListEditor extends React.Component {
     constructor(props){
 		super(props);
 		this.state = {studentList : list}
 	}
 	
+	RemoveMethod(uid,index){
+		return axios
+		.post('/api/etudiant/destroy',{
+			uiddelet:uid
+		})
+		.then(res=>{
+			alert()
+			console.log(res)
+			list.splice(index , 1);
+			this.setState({
+				studentList : list
+			})
+		})
+		.catch(err=>{
+			alert('error');
+		})
+	}
 	AddMethod(){
-		const name = document.getElementById("name").value ;
+		const listx = [ $('#name').val() , $('#lastn').val(),$('#uid').val(), $('#deg').val()];
+		return axios
+		.post('/api/etudiant/add',{
+			nom:$('#name').val(),
+			prenom:$('#lastn').val(),
+			sid:$('#uid').val(),
+			degree:$('#deg').val()
+		})
+		.then(res=>{
+			alert()
+			console.log(res)
+			list.push(listx);
+			this.setState({
+			studentList : list
+			})
+			
+		})
+		.catch(err=>{
+			alert('error');
+		})
+		
+		/*const name = document.getElementById("name").value ;
 		const lastName = document.getElementById("lastn").value ;
 		const SID = document.getElementById("uid").value;
 		const degree = document.getElementById("deg").value;
@@ -23,16 +79,14 @@ export class ListEditor extends React.Component {
 			this.setState({
 				studentList : list
 			})
-		}
+		}*/
 	}
-
-	RemoveMethod(itemIndex){
+	/*RemoveMethod2(itemIndex){
 		list.splice(itemIndex , 1);
 		this.setState({
 			studentList : list
 		})
-	}
-
+	}*/
 	back(){
 		const pan = (
 		<div className="App2">
@@ -47,7 +101,6 @@ export class ListEditor extends React.Component {
 
 
     render(){
-
         return(
 				<div className="Two-container">
 					<button className="back-button" onClick={this.back.bind(this)}>&#8592;</button>
@@ -71,7 +124,7 @@ export class ListEditor extends React.Component {
 										</ul>
 										<button className="button-spice1" 
 										type="button" 
-										onClick={() => this.RemoveMethod(this.state.studentList.indexOf(item))}>
+										onClick={() => this.RemoveMethod(item[2],this.state.studentList.indexOf(item)) }>	
 											&minus;
 										</button>
 									</div>
