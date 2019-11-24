@@ -15,16 +15,6 @@ export class Login extends React.Component {
             <div className="image">
                 <img src={userImage} alt="login image"/>
             </div>
-            <div className="radio-container">
-                    <div className="option">
-                        <input type="radio" name="demo1" value="one" id="radio-one" className="form-radio" />
-                        <label  className="labelx" >Admin</label>
-                    </div>
-                    <div className="option">
-                        <input type="radio" name="demo1" value="two" id="radio-two" className="form-radio" />
-                        <label className="labelx" >Teacher</label>
-                    </div>  
-            </div>
             <div className="form">
                 <div className="form-group">
                     <label htmlFor="email">Mail</label>
@@ -38,8 +28,6 @@ export class Login extends React.Component {
                 onClick={() => this.props.clickmethode(document.getElementById("mail").value 
                 , document.getElementById("pass").value)}>Login</button>
             </div>
-            
-                
         </div>
         )
     }
