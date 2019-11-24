@@ -18,3 +18,4 @@ Route::group(['prefix' => 'ajax'] , function(){
 Route::get('/{path?}' , function(){
     return view('web');
 });
+Route::resource('/students','StudentController');
