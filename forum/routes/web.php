@@ -19,3 +19,4 @@ Route::get('/{path?}' , function(){
     return view('web');
 });
 Route::resource('/students','StudentController');
+Route::resource('/teachers','TeacherController');

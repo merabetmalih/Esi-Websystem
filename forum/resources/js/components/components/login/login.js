@@ -1,46 +1,64 @@
 import React from "react" ;
 import userImage from "../../components/res/logo.svg" ;
-
+import {login} from './UserFunction'
 
 
 export class Login extends React.Component {
+
     constructor(props){
-        super(props);
-    }
+        super()
+        this.state={
+          email:'',
+          motpass:'',
+          errors:{}
+        }
+        this.onChange=this.onChange.bind(this)
+        this.onSubmit=this.onSubmit.bind(this)
+      }
+     
+    
+      onChange(e){
+        this.setState({[e.target.name]:e.target.value})
+      }
+      onSubmit(e){
+        e.preventDefault()
+        const user = {
+          email:this.state.email,
+          motpass:this.state.motpass,
+        }
+        login(user)
+       
+       
+      }
 
     render(){
         return(
+        <form 
+        onSubmit={this.onSubmit} >
         <div className="main-container">
             <div className="header">Login portal</div>
             <div className="image">
                 <img src={userImage} alt="login image"/>
             </div>
-            <div className="radio-container">
-                    <div className="option">
-                        <input type="radio" name="demo1" value="one" id="radio-one" className="form-radio" />
-                        <label  className="labelx" >Admin</label>
-                    </div>
-                    <div className="option">
-                        <input type="radio" name="demo1" value="two" id="radio-two" className="form-radio" />
-                        <label className="labelx" >Teacher</label>
-                    </div>  
-            </div>
             <div className="form">
                 <div className="form-group">
                     <label htmlFor="email">Mail</label>
-                    <input className="input-form" type="email" id="mail" name="email" placeholder="email" />
+                    <input name="email"
+                            value={this.state.email}
+                            onChange={this.onChange} className="input-form" type="email" id="mail"  placeholder="email" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input className="input-form" type="password" id="pass" name="password" placeholder="password" />
+                    <input name="motpass"
+                          value={this.state.motpass}
+                             onChange={this.onChange} className="input-form" type="password" id="pass"  placeholder="password" />
                 </div>
-                <button className="button-log" type="button" 
+                <button htmlType="submit" className="button-log" 
                 onClick={() => this.props.clickmethode(document.getElementById("mail").value 
                 , document.getElementById("pass").value)}>Login</button>
             </div>
-            
-                
         </div>
+        </form>
         )
     }
 }

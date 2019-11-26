@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Teacher;
+
 class TeacherController extends Controller
 {
-    function store(Request $request)
+    public function store(Request $request)
     {
         Teacher::insert([
             'name'=>$request['nom'],
@@ -19,22 +20,20 @@ class TeacherController extends Controller
             'data'=>"hh"
         ]);
 
-      
+       
 
     }
 
-    
-
     public function destroy(Request $request)
     {
-        Teacher::where('id','=',$request['iddelet'])->delete();
+       
+        Teacher::where('UID','=',$request['uiddelet'])->delete();
         return response([
             'status'=>'success',
             'data'=>"hsh"
         ]);
         
     }
-
     public function list()
     {
         $dteacher = Teacher::all();

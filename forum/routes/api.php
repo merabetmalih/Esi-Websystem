@@ -19,3 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/etudiant/add','StudentController@store');
 Route::post('/etudiant/destroy','StudentController@destroy');
 Route::get('/etudiant/list','StudentController@list');
+Route::post('/teacher/add','TeacherController@store');
+Route::post('/teacher/destroy','TeacherController@destroy');
+Route::get('/teacher/list','TeacherController@list');
+Route::get('/admin/login','AdminController@login');
