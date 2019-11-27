@@ -36,4 +36,29 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    public function login(Request $request)
+    {
+        $user=new User;
+        $user=User::whereEmailAndPassword($request['email'],sha1($request['motpass']))->get();
+        if(count($user)>0){
+            $admin=new Admin;
+            $admin=Admin::whereEmailAndPassword($request['email'],sha1($request['motpass']))->get();
+            if(count($admin)>0){
+                return response([
+                    'status'=>'succeslogin',
+                    'data'=>[
+                        'email'=>$request['email'],
+                        'motpass'=>$request['motpass'],
+                        'user_con'=>'a'
+                    ]
+                ]);
+            }else{
+                return response([
+                    'status'=>'wronglogin',
+                    'data'=>null 
+                ]);
+            }
+        }
+
+}
 }

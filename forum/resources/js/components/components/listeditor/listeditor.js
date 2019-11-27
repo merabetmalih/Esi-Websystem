@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 import {Panel} from '../index';
 import $ from 'jquery';
 import axios from 'axios';
-/*const list2 = ['haroune' , 'kechaoui' , '221452' , '5eme'];
-const list22 = ['haroune' , 'kechaoui' , '45872' , '5eme'];
-const list =[list2,list22]*/
+
 function getlist(){
 	var tmp=[];
 	$.get('/api/etudiant/list')
@@ -16,7 +14,7 @@ function getlist(){
 		return tmp;
 	})
 	.fail(function(err){
-		alert('il y a un erreur de conexion')
+		alert('error of conexion')
 		console.log(err.data)
 	})
 	return tmp;
@@ -35,7 +33,7 @@ export class ListEditor extends React.Component {
 			uiddelet:uid
 		})
 		.then(res=>{
-			alert()
+			//alert()
 			console.log(res)
 			list.splice(index , 1);
 			this.setState({
@@ -56,7 +54,7 @@ export class ListEditor extends React.Component {
 			degree:$('#deg').val()
 		})
 		.then(res=>{
-			alert()
+			//alert()
 			console.log(res)
 			list.push(listx);
 			this.setState({
@@ -68,30 +66,14 @@ export class ListEditor extends React.Component {
 			alert('error');
 		})
 		
-		/*const name = document.getElementById("name").value ;
-		const lastName = document.getElementById("lastn").value ;
-		const SID = document.getElementById("uid").value;
-		const degree = document.getElementById("deg").value;
-
-		if(name != '' && lastName != '' && SID != '' && degree != ''){
-			const listx = [ name , lastName , SID , degree];
-			list.push(listx);
-			this.setState({
-				studentList : list
-			})
-		}*/
+		
 	}
-	/*RemoveMethod2(itemIndex){
-		list.splice(itemIndex , 1);
-		this.setState({
-			studentList : list
-		})
-	}*/
+	
 	back(){
 		const pan = (
 		<div className="App2">
 			<div>
-		  		<Panel rater="one" />
+		  		<Panel emailadr={this.props.mailuser}/>
 			</div>
 		  </div>);
 
